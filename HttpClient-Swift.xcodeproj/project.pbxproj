@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A2662122199057E200671C9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2662121199057E200671C9A /* AppDelegate.swift */; };
-		A2662124199057E200671C9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2662123199057E200671C9A /* ViewController.swift */; };
-		A2662127199057E200671C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2662125199057E200671C9A /* Main.storyboard */; };
 		A2662129199057E200671C9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2662128199057E200671C9A /* Images.xcassets */; };
 		A2662135199057E200671C9A /* HttpClient_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2662134199057E200671C9A /* HttpClient_SwiftTests.swift */; };
+		A26621401990581E00671C9A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266213E1990581E00671C9A /* MainViewController.swift */; };
+		A26621411990581E00671C9A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A266213F1990581E00671C9A /* MainViewController.xib */; };
+		A26621431990585A00671C9A /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26621421990585900671C9A /* HttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +29,13 @@
 		A266211C199057E200671C9A /* HttpClient-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HttpClient-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2662120199057E200671C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2662121199057E200671C9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A2662123199057E200671C9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A2662126199057E200671C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2662128199057E200671C9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A266212E199057E200671C9A /* HttpClient-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HttpClient-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2662133199057E200671C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2662134199057E200671C9A /* HttpClient_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient_SwiftTests.swift; sourceTree = "<group>"; };
+		A266213E1990581E00671C9A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A266213F1990581E00671C9A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		A26621421990585900671C9A /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +77,10 @@
 		A266211E199057E200671C9A /* HttpClient-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				A26621421990585900671C9A /* HttpClient.swift */,
 				A2662121199057E200671C9A /* AppDelegate.swift */,
-				A2662123199057E200671C9A /* ViewController.swift */,
-				A2662125199057E200671C9A /* Main.storyboard */,
+				A266213E1990581E00671C9A /* MainViewController.swift */,
+				A266213F1990581E00671C9A /* MainViewController.xib */,
 				A2662128199057E200671C9A /* Images.xcassets */,
 				A266211F199057E200671C9A /* Supporting Files */,
 			);
@@ -189,8 +192,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2662127199057E200671C9A /* Main.storyboard in Resources */,
 				A2662129199057E200671C9A /* Images.xcassets in Resources */,
+				A26621411990581E00671C9A /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,8 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2662124199057E200671C9A /* ViewController.swift in Sources */,
 				A2662122199057E200671C9A /* AppDelegate.swift in Sources */,
+				A26621401990581E00671C9A /* MainViewController.swift in Sources */,
+				A26621431990585A00671C9A /* HttpClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,17 +234,6 @@
 			targetProxy = A266212F199057E200671C9A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A2662125199057E200671C9A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2662126199057E200671C9A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A2662136199057E200671C9A /* Debug */ = {
